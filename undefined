@@ -1,0 +1,12 @@
+import CoverDesigner from "@/components/creative/CoverDesigner";
+
+export default function CoverDesignerStory() {
+  return (
+    <div className="p-8 bg-background min-h-screen">
+      <CoverDesigner
+        onGenerate={(design) => console.log('Generated design:', design)}
+        onDownload={() => console.log('Downloading cover')}
+      />
+    </div>
+  );
+}
